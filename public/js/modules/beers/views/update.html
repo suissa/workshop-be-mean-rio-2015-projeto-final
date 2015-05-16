@@ -1,0 +1,34 @@
+<h2>Alteração da Cerveja {{ cerveja.name }}</h2>
+<p class="msg">
+  {{ msg }}
+</p>
+
+<form name="beerForm">
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Name</span>
+      <input type="text" data-ng-model="cerveja.name" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Price</span>
+      <input type="text" data-ng-model="cerveja.price" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Alcohol</span>
+      <input type="text" data-ng-model="cerveja.alcohol" />
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="">
+      <span class="form-label-text">Description</span>
+      <textarea data-ng-model="cerveja.description"></textarea>
+    </label>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-large" data-ng-click="update(cerveja)">Salvar</button>
+  </div>
+</form>
